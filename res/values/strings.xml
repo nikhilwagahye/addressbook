@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">My Address Book</string>
+
+    <string-array name="planets_array">
+        <item>ANNOUNCEMENTS</item>
+        <item>EVENTS</item>
+        <item>TIMETABLE</item>
+        <item>LUNCH MENU</item>
+        <item>SPECIAL INSTRUCTIONS</item>
+        <item>SETTINGS</item>
+        <item>CONTACT US</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="options_array">
+        <item>search by</item>
+        <item>Name</item>
+        <item>Mobile Number</item>
+    </string-array>
+
+    <string name="search">search</string>
+    <string name="myapp">My Address Book</string>
+
+</resources>

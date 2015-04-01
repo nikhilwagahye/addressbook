@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewMobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mob No :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMobileNoToShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewSecondaryNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sec No :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSecondaryNoToShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewEmailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEmailIdToShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewBirthDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewBirthDateToShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAddressToShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:orientation="vertical" >
+
+            <!-- Delete Button -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8sp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/buttonDeleteContact"
+                    android:layout_width="40sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="deleteContact"
+                    android:src="@drawable/delete2" />
+
+                <ImageButton
+                    android:id="@+id/buttonDeleteUpdate"
+                    android:layout_width="40sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:onClick="updateContact"
+                    android:src="@drawable/edit2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8sp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/buttonCall"
+                    android:layout_width="40sp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="call"
+                    android:src="@drawable/call2" />
+
+                <ImageButton
+                    android:id="@+id/buttonMessage"
+                    android:layout_width="40sp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:onClick="messasge"
+                    android:src="@drawable/ic_action_chat" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/buttonMail"
+                android:layout_width="40sp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20sp"
+                android:onClick="mail"
+                android:src="@drawable/meg2" >
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
